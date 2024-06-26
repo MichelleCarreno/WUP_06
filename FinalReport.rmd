@@ -88,7 +88,8 @@ chisqtestGC(table2)
 ```
 
 ```{r}
-fisherXY(x=mydata$race, y=mydata$cappun, printAll = "TRUE" )
+source(file="fisherXY.R")
+fisherXY(x=mydata$race, y=mydata$cappun, printAll = )
 ```
 
 # Discussion and Conclusion
