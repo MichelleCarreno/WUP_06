@@ -87,7 +87,9 @@ chisq.test(table2)
 chisqtestGC(table2)
 ```
 
-
+```{r}
+fisherXY(x=mydata$race, y=mydata$cappun, printAll = "TRUE" )
+```
 
 # Discussion and Conclusion
 
