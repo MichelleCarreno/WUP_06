@@ -82,15 +82,14 @@ In the numerical results were similar numbers to the master branches results. Th
 
 <!--State hypothesis clearly.  Make sure your discussion of the inferential test covers all the aspects that the test output produces, such as test statistic, p-value etc.  Make a decision about the null hypothesis, explain the assumptions on which the selected test/procedure was based, and why the chosen procedure satisfys the assumptions and is appropriate to answer the research question!-->
 
-```{r}
-chisq.test(table2)
-chisqtestGC(table2)
-```
 
 ```{r}
-source(file="fisherXY.R")
-fisherXY(x=mydata$race, y=mydata$cappun, printAll = )
+fisherXY(mydata$race,mydata$cappun, confL = .01, printAll = "TRUE")
 ```
+
+Using the numerical CHI test and the Fisher test numerical results give us insight into the difference between each comparison using the new data. The CHI test information provides a probability value less than .000000000000000022 percent. This is too small. 
+The fisher test confirms the comparison of each race. The white race when compared to the black race was significantly different. The resulting p value was .00000174. The white and other race were compared and the p value was 0.2565. In the last selection of comparison, the black and other races were compared and the resulting p value was 0.06299. The observation of the fisher test is a replication of the process used in the master branch. 
+To evaluate this information the hypothesis pertaining to the inclusion of race and when determining favor of capital punishment, we are looking into both test results. The p value to both the CHI Squared, and Fisher Test are not in favor of the results, and we now reject the null hypothesis. 
 
 # Discussion and Conclusion
 
